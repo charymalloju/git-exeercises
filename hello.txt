@@ -1,1 +1,4 @@
 Master file
+
+sdhfjshdfjshdfs
+db.proposals.aggregate([{$group:{_id:"$proposal_id",count:{$sum:1}}},{$match:{count:{$gt:1}}}]).pretty()
